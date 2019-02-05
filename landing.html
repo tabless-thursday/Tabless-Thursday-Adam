@@ -1,28 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <title>Tabless Thursday</title>
+</head>
+
 <body>
-        <header class='head-container'>
-            <h1 class='logo'>Tabless Thursday</h1>
-            <nav>
-                <a href="#">Home</a>
-                <a href="#">Tabs</a>
-                <a href="#">About</a>
-                <a href="#">Sign Up</a>
-                <a href="#">Contact</a>
-            </nav>
-        </header>
-    
-        <section  class=''>
-    
-            <div class='main-content'>
-                <ul class='main-ul'>
-                    <li>Organize Your Life</li>
-                    <li>Simplify Tasks</li>
-                    <li>Get More Done</li>
-                </ul>
-                <img src="IMAGES\paper-clips.jpg" alt="image of colored paper clips">
+    <section class='land-page'>
+
+        <div class='land-content'>
+            <h1 class='land-logo'>Tabless Thursday</h1>
+            <ul class='main-ul'></ul>
+            <li>Organize Your Life</li>
+            <li>Simplify Tasks</li>
+            <li>Get More Done</li>
+            </ul>
+            <img src="IMAGES\landing\dry-erase-board.jpg" alt="image of colored paper clips">
+        
+        <form class='sign-up' action="action_page.php" style="border:1px solid #ccc">
+            <div class="container">
+                <h1>Go Tabless</h1>
+                <p>Enter your name, email, and tab url to get started</p>
+                <hr>
+
+                <label for="email"><b>Email</b></label>
+                <input type="text" placeholder="Enter Email" name="email" required>
+
+                <label for="first-name"><b>First Name</b></label>
+                <input type="text" placeholder="Enter First Name" name="first-name" required>
+
+                <label for="last-nmae"><b></b></label>
+                <input type="password" placeholder="Enter Last Name" name="last-name" required>
+
+
+                <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+                <div class="clearfix">
+                    <button type="button" class="cancelbtn">Cancel</button>
+                    <button type="submit" class="signupbtn">Sign Up</button>
+                </div>
             </div>
-    
-        </section>
-    
-    </body>
-    
-    </html>
+        </form>
+    </div>
+    </section>
+
+</body>
+
+</html>
