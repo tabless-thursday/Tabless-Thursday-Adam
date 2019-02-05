@@ -46,7 +46,40 @@ p {
   font-size: 3rem;
   color: #3E606F;
 }
-.land-logo {
+.land-page {
+  max-width: 600px;
+}
+@media (min-width: 600px) {
+  .land-page {
+    max-width: 800px;
+  }
+}
+@media (min-width: 800px) {
+  .land-page {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+}
+.land-page .land-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #91AA9D;
+  position: relative;
+}
+.land-page .land-content .land-img {
+  display: none;
+  border-radius: 10px;
+}
+@media (min-width: 600px), (min-width: 800px) {
+  .land-page .land-content .land-img {
+    position: absolute;
+    display: inline-block;
+    right: 25px;
+    top: 25px;
+    max-width: 50%;
+  }
+}
+.land-page .land-content .land-logo {
   font-family: 'PT sans', sans-serif;
   font-size: 4rem;
   border-bottom: 1px solid #3E606F;
@@ -56,48 +89,43 @@ p {
   background-color: #193441;
   color: #FCFFF5;
 }
-.land-content {
-  display: flex;
-  flex-direction: column;
-  max-width: 500px;
-  background-color: #91AA9D;
-}
-.land-content h2 {
-  margin: 5px 0px 0px 10px;
+.land-page .land-content h2 {
+  margin: 10px 0px 0px 10px;
   font-size: 2.7rem;
   color: #193441;
 }
-.land-content p {
+.land-page .land-content p {
   padding: 1px 0px 2px 17px;
   margin: 0;
   color: #FFFFFF;
 }
-.bottom-content {
+.land-page .bottom-content {
   display: flex;
   flex-direction: column;
   background-color: #193441;
+  align-items: flex-end;
 }
-.bottom-content h2 {
-  font-size: 3rem;
-  color: #FFFFFF;
-  align-self: flex-end;
-  margin-right: 10%;
-}
-.bottom-content .sub-btn {
+.land-page .bottom-content .sub-box {
   width: 100%;
   display: flex;
-  justify-content: center;
+  align-items: flex-end;
   flex-direction: column;
-  margin-left: 25px;
+  max-width: 450px;
+  margin-right: 5%;
 }
-.bottom-content .email {
+.land-page .bottom-content h2 {
+  font-size: 3rem;
+  color: #FFFFFF;
+}
+.land-page .bottom-content .email {
   border: 1px solid #193441;
-  height: 50px;
+  height: 55px;
   width: 85%;
   font-size: 1.75rem;
   padding-left: 10px;
+  border-radius: 10px;
 }
-.bottom-content .submit {
+.land-page .bottom-content .submit {
   width: 85%;
   height: auto;
   background-color: #91AA9D;
@@ -113,7 +141,7 @@ p {
   cursor: pointer;
   border: 1px solid #193441;
 }
-.bottom-content .submit:hover {
+.land-page .bottom-content .submit:hover {
   background-color: #ffffff;
   color: #91AA9D;
   border: 1px solid #91AA9D;
@@ -163,9 +191,9 @@ p {
 .foot {
   display: flex;
   flex-direction: column;
+  align-items: center;
   width: 100%;
   max-width: 500px;
-  align-items: center;
 }
 .foot .foot-top {
   display: flex;
