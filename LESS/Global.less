@@ -11,6 +11,17 @@ html,
 body {
     font-family: 'PT sans', sans-serif;
     background-color: #FCFFF5;
+    margin: 0;
+    padding: 0;
+
+    @media @tablet {
+        max-width: 800px;
+    }
+
+    @media @desktop {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
 }
 
 h1, h2, h3 {
