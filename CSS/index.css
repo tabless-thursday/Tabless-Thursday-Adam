@@ -97,9 +97,6 @@ p {
   font-size: 3rem;
   color: #193441;
 }
-.head-container a:hover {
-  color: #3c7e9d;
-}
 @media (min-width: 501px), (min-width: 801px) {
   .head-container a {
     font-size: 1.75rem;
@@ -131,7 +128,7 @@ p {
   justify-content: space-evenly;
 }
 .foot .submit {
-  width: 85%;
+  width: 100%;
   height: auto;
   background-color: #193441;
   color: #FFFFFF;
@@ -145,6 +142,7 @@ p {
   align-items: center;
   cursor: pointer;
   border: 1px solid #FFFFFF;
+  margin: 10px;
 }
 .foot .submit:hover {
   background-color: #9ac4d8;
@@ -176,9 +174,6 @@ p {
     color: #193441;
     text-decoration: none;
   }
-}
-.foot nav a:hover {
-  color: #3c7e9d;
 }
 .land-page {
   max-width: 600px;
@@ -214,14 +209,19 @@ p {
   }
 }
 .land-page .land-content .land-logo {
+  display: flex;
+  margin: 0;
+  padding-left: 5%;
+  background-color: #193441;
+}
+.land-page .land-content h1 {
   font-family: 'PT sans', sans-serif;
   font-size: 4rem;
-  border-bottom: 1px solid #3E606F;
-  margin: 0;
-  padding: 25px 0;
-  padding-left: 25px;
-  background-color: #193441;
+  padding: 5px;
   color: #FCFFF5;
+  border: 1px solid #FCFFF5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 @media (min-width: 801px) {
   .land-page .land-content .mid-content {
