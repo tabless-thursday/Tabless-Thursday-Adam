@@ -1,7 +1,7 @@
 .team {
     width: 100%;
     padding: 10px;
-    
+
     h1 {
         font-size: 2.5rem;
     }
@@ -13,19 +13,22 @@
         justify-content: center;
         padding-top: 60px;
     }
-        .team-card {
-            display: none;
 
-            width: 75%;
-            .team-card-name {
-                font-size: 24px;
-                font-weight: bold;
-                padding-bottom: 10px;
-            }
+    .team-card {
+        display: none;
+
+        width: 75%;
+
+        .team-card-name {
+            font-size: 24px;
+            font-weight: bold;
+            padding-bottom: 10px;
         }
-        .team-card-selected {
-            display: block;
-        }
+    }
+
+    .team-card-selected {
+        display: block;
+    }
 
     .team-tabs {
         display: flex;
@@ -33,21 +36,26 @@
         width: 100%;
     }
 
-        .team-tab {
-            padding: 2% 2%;
-            font-size: 1.75rem;
-            background-color: #193441;
-            border-right: 1px solid white;
-            color: white;
-            cursor: pointer;
-            &:hover {
+    .team-tab {
+        padding: 2% 2%;
+        font-size: 1.75rem;
+        background-color: #193441;
+        border-right: 1px solid white;
+        color: white;
+        cursor: pointer;
+        &:hover {
             background-color: #D1DBBD;
             color: #193441;
-            }
+        }
 
+    }
+
+    .team-tab-selected {
+        z-index: 2;
+        background-color: #D1DBBD;
+        color: #193441;
+        &:hover {
+            background-color: white;
         }
-        .team-tab-selected {
-            background-color: #D1DBBD;
-            color: #193441;
-        }
+    }
 }
