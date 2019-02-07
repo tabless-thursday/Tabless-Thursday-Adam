@@ -2,8 +2,8 @@
     width: 100%;
     padding: 10px;
 
-    h1 {
-        font-size: 2.5rem;
+    h2 {
+        font-size: 3rem;
     }
 
     .team-cards {
@@ -20,9 +20,13 @@
         width: 75%;
 
         .team-card-name {
-            font-size: 24px;
+            font-size: 2.5rem;
             font-weight: bold;
             padding-bottom: 10px;
+        }
+
+        .team-card-description {
+            font-size: 1.75rem;
         }
     }
 
@@ -38,7 +42,10 @@
 
     .team-tab {
         padding: 2% 2%;
-        font-size: 1.75rem;
+        align-content: center;
+        text-align: center;
+        flex: 1;
+        font-size: 1rem;
         background-color: #193441;
         border-right: 1px solid white;
         color: white;
@@ -46,6 +53,13 @@
         &:hover {
             background-color: #D1DBBD;
             color: #193441;
+        }
+
+        @media @tablet {
+            font-size: 1.5rem;
+        }
+        @media @desktop {
+            font-size: 2.5rem;
         }
 
     }

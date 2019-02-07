@@ -139,6 +139,7 @@ p {
   border-radius: 10px;
   margin: 8px 0;
   padding: 8px 0;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -249,14 +250,6 @@ p {
   font-size: 3rem;
   color: #FFFFFF;
 }
-.land-page .bottom-content .email {
-  border: 1px solid #193441;
-  height: 55px;
-  width: 85%;
-  font-size: 1.75rem;
-  padding-left: 10px;
-  border-radius: 10px;
-}
 .land-page .bottom-content .submit {
   width: 85%;
   height: auto;
@@ -267,6 +260,7 @@ p {
   border-radius: 10px;
   margin: 8px 0;
   padding: 8px 0;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -282,7 +276,7 @@ p {
   display: flex;
   flex-direction: column;
   width: 100%;
-  align-items: center;
+  align-items: stretch;
 }
 @media (min-width: 501px) {
   .main-content {
@@ -294,7 +288,6 @@ p {
 .main-content .content-box {
   display: flex;
   flex-direction: column;
-  flex: 1;
   padding: 10px;
   width: 100%;
 }
@@ -336,6 +329,7 @@ p {
   border-radius: 10px;
   margin: 8px 0;
   padding: 8px 0;
+  text-decoration: none;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,8 +344,8 @@ p {
   width: 100%;
   padding: 10px;
 }
-.team h1 {
-  font-size: 2.5rem;
+.team h2 {
+  font-size: 3rem;
 }
 .team .team-cards {
   width: 100%;
@@ -365,9 +359,12 @@ p {
   width: 75%;
 }
 .team .team-card .team-card-name {
-  font-size: 24px;
+  font-size: 2.5rem;
   font-weight: bold;
   padding-bottom: 10px;
+}
+.team .team-card .team-card-description {
+  font-size: 1.75rem;
 }
 .team .team-card-selected {
   display: block;
@@ -379,7 +376,10 @@ p {
 }
 .team .team-tab {
   padding: 2% 2%;
-  font-size: 1.75rem;
+  align-content: center;
+  text-align: center;
+  flex: 1;
+  font-size: 1rem;
   background-color: #193441;
   border-right: 1px solid white;
   color: white;
@@ -388,6 +388,16 @@ p {
 .team .team-tab:hover {
   background-color: #D1DBBD;
   color: #193441;
+}
+@media (min-width: 501px) {
+  .team .team-tab {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 801px) {
+  .team .team-tab {
+    font-size: 2.5rem;
+  }
 }
 .team .team-tab-selected {
   z-index: 2;
