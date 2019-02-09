@@ -1,0 +1,102 @@
+
+.land-page {
+
+
+    .land-content {
+        display: flex;
+        flex-direction: column;
+        background-color: #91AA9D;
+        position: relative;
+    
+        .land-img {
+            display: none;
+            border-radius: 10px;
+
+            @media @tablet, @desktop {
+                position: absolute;
+                display: inline-block;
+                right: 25px;
+                top: 25px;
+                max-width: 45%;
+            }
+
+
+        }
+        .land-logo {
+            display: flex;
+            margin: 0;
+            padding-left: 5%;
+            background-color: #193441;
+            
+        }
+
+        h1 {
+            font-family: 'PT sans', sans-serif;
+            font-size: 4rem;
+            padding: 5px;
+            color: #FCFFF5;
+            border: 1px solid #FCFFF5;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+
+    .mid-content {
+        @media @desktop {
+        padding-left: 50px;
+    }
+    
+
+        h2 {
+            margin: 10px 0px 0px 10px;
+            font-size: 2.7rem;
+            color: #193441;
+        }
+
+        p {
+            padding: 1px 0px 2px 17px;
+            margin: 0;
+            color: #FFFFFF;
+        }
+    }
+    }
+
+    .bottom-content {
+        display: flex;
+        background-color: #193441;
+        justify-content: space-around;
+        padding-left: 3%;
+        padding-right: 3%;
+
+        .land-fav {
+            align-self: center;
+        }
+
+        .sub-box {
+            width: 100%;
+            display: flex;
+            align-items: flex-end;
+            flex-direction: column;
+            max-width: 450px;
+        }
+
+            h2 {
+                font-size: 3rem;
+                color: #FFFFFF;
+            }
+            // .email {
+            //     border: 1px solid #193441;
+            //     height: 55px;
+            //     width: 85%;
+            //     font-size: 1.75rem;
+            //     padding-left: 10px;
+            //     border-radius: 10px;
+            // }
+
+            .submit {
+                .custom-btn(85%, auto, #91AA9D, #193441, 3.25rem);
+                border: 1px solid #193441;
+            }
+
+    }
+}

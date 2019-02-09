@@ -1,0 +1,54 @@
+.main-content {
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    width: 100%;
+    align-items: stretch;
+
+    @media @tablet {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .content-box {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        width: 100%;
+
+        @media @tablet {
+            border: 1px solid #193441;
+            border-radius: 10px;
+            max-width: 45%;
+            margin: 10px;
+            background-color: #193441;
+        }
+    }
+
+    h2 {
+        font-size: 2.5rem;
+        color: #193441;
+        margin: 0;
+
+        @media @tablet {
+            color: white;
+        }
+    }
+
+    p {
+        @media @tablet {
+            color: white;
+        }
+    }
+
+    img {
+        border-radius: 10px;
+        border: 1px solid #193441;
+    }
+
+    .landing-btn {
+        .custom-btn(100%, auto, #193441, white )
+    }
+
+}
